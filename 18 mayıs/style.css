@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff6699;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 30px;
+    color: #ff6699;
+}
+.sule{
+    font-size: 0.8em;
+    color: #555;
+}
+.sule1{
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+}
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+li p{
+    font-size: 1.0em;
+    font-style: italic;
+    color: #555;
+    background-color: rgba(251, 222, 244, 0.314);
+    border-radius:20px;
+}
+section {
+    position: center;
+    padding: 170px 20px;
+    margin-bottom: 20px;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #ff6699;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3366;
+}
+
+/* Active section is visible */
+.section.active {
+    display: block;
+    opacity: 1;
+}
+
+#gallery .gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
